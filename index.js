@@ -5,8 +5,10 @@ module.exports = {
   name: 'ember-cli-content-for-demo',
 
   contentFor: function(type, config){
+    debugger;
     if (type === 'head'){
       console.log('CONFIG = ' + config);
+
       return '<link href="http://cdnjs.head.css" rel="stylesheet" type="text/css" />';
 
     } else if (type === 'head-footer'){
